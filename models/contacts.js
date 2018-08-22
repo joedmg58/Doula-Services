@@ -32,6 +32,10 @@ module.exports = function(sequelize, DataTypes) {
     clientDueDate: {
       type: DataTypes.DATE,
       validate: { isDate: true }
+    },
+    clientMessage:{
+      type: DataTypes.TEXT,
+      validate: { len: [300] }
     }
   });
   return Contacts;
