@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "joedmg58",
+    "database": "mydoulaclients_db",
     "host": "localhost",
     "dialect": "mysql"
   },
