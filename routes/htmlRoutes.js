@@ -3,12 +3,17 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Contacts.findAll({}).then(function( data ) {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+    /* db.Contacts.findAll({}).then(function( data ) {
       res.render("index", {
         msg: "Welcome!",
         examples: data
       });
-    });
+    }); */
+  });
+
+  app.get("/contact", function(req, res){
+    res.sendFile(path.join(__dirname, "../public/contact.html"));
   });
 
   // Load example page and pass in an example by id
