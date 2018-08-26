@@ -11,7 +11,11 @@ module.exports = function(app) {
 
   // Create a new contact
   app.post("/api/contacts", function(req, res) {
+    console.log( 'Data Rx on POST request = %s', JSON.stringify(req.body) );
+
     db.Contacts.create( req.body ).then( function( dbContacts ) {
+      console.log( Contacts.sql );
+
       res.json( dbContacts );
     });
   });

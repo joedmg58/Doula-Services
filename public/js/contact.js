@@ -11,12 +11,12 @@ function submitBtnClick( event ){
     };
 
     console.log( 'AJAX POST request to \'/api/contacts\'' );
-    $.ajax({
-        url: '/api/contacts',
-        method: 'POST',
+    $.ajax('/api/contacts', {
+        type: 'POST',
         data: contactInfo
     }).then( function( response ){
         console.log( 'AJAX data response = %s', response.data );
+        location.reload(); //reloads the current page
     } );
 }
 
@@ -24,6 +24,6 @@ function submitBtnClick( event ){
 $(document).ready( function(){
 
     //register listener por submit button click
-    $('submitBtn').on('click', submitBtnClick ); 
+    $('#submitBtn').on('click', submitBtnClick ); 
 
 });

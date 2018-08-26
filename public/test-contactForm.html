@@ -17,7 +17,7 @@
                 <legend>Contact info: </legend>
 
                 <label for="firstName">First Name:</label> <br>
-                <input type="text" name="firstName" 
+                <input type="text" name="clientName" 
                        id="firstName" 
                        placeholder="First name" 
                        pattern="[A-Za-z\s]+"
@@ -26,7 +26,7 @@
                 <span></span> <br><br>
 
                 <label for="lastName">Last Name:</label> <br>
-                <input type="text" name="lastName" 
+                <input type="text" name="clientLastName" 
                        id="lastName" 
                        placeholder="Last name"
                        pattern = "[A-Za-z\s]+"
@@ -35,7 +35,7 @@
                 <span></span> <br><br>
 
                 <label for="phoneNumber">Phone Number:</label> <br>
-                <input type="text" name="phoneNumber" 
+                <input type="text" name="clientPhoneNumber" 
                        id="phoneNumber" 
                        placeholder="(123)-456-7890"
                        pattern = "[0-9]+"
@@ -44,13 +44,13 @@
                 <span></span> <br><br>
 
                 <label for="email">e-mail:</label> <br>
-                <input type="text" name="email" id="email" placeholder="myemail@somedomain.com" width="80rm"> <br><br>
+                <input type="text" name="clientEmail" id="email" placeholder="myemail@somedomain.com" width="80rm"> <br><br>
 
                 <label for="dueDate">Due Date</label> <br>
-                <input type="text" name="dueDate" id="dueDate" placeholder="xx/xx/xxxx"> <br><br>
+                <input type="text" name="clientDueDate" id="dueDate" placeholder="xx/xx/xxxx"> <br><br>
 
                 <label for="message">Message:</label> <br>
-                <textarea name="message" rows="4" cols="80" id="message" placeholder="Write some message here..."></textarea> <br> 
+                <textarea name="clientMessage" rows="4" cols="80" id="message" placeholder="Write some message here..."></textarea> <br> 
 
                 <input type="submit" title="Input type submit, executes the default submit event of the form." value="Submit"> <br>
                 <button type="button" id="submitBtn"  title="Button that will trigger the on click event to send ajax post request">Submit button</button> <br><br>
