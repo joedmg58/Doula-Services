@@ -12,7 +12,7 @@
     </div>
 
     <div id="form-container">
-        <form action="/api/contacts" method="POST">
+        <form action="/api/contacts" method="POST" id="contactForm">
             <fieldset>
                 <legend>Contact info: </legend>
 
@@ -51,6 +51,8 @@
 
                 <label for="message">Message:</label> <br>
                 <textarea name="clientMessage" rows="4" cols="80" id="message" placeholder="Write some message here..."></textarea> <br> 
+
+                <p id="errorMsg" class="warning"></p>
 
                 <input type="submit" title="Input type submit, executes the default submit event of the form." value="Submit"> <br>
                 <button type="button" id="submitBtn"  title="Button that will trigger the on click event to send ajax post request">Submit button</button> <br><br>

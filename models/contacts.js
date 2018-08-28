@@ -36,7 +36,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     clientMessage:{
       type: DataTypes.TEXT,
-      validate: { len: [300] }
+      validate: { len: [0,300] }
     }
   });
   
