@@ -7,12 +7,6 @@ function submitBtnClick( event ){
     var htmlPhoneNumber = $('#phoneNumber');
 
     //validate inputs, if not valid don't send POST request
-    if ( !contactForm.valid() ) {
-        $('#errorMsg').text('Enter valid data !');
-        return;
-    } else {
-        $('#errorMsg').text('');
-    }
 
     //the properties of 'contactInfo' object has to match with table 'contacts' field names
     var contactInfo = {
@@ -36,10 +30,6 @@ function submitBtnClick( event ){
 
 
 $(document).ready( function(){
-
-    //Reference to contact form for validation process
-    var contactForm = $( '#contactForm' );
-    contactForm.Validate();
 
     //register listener por submit button click
     $('#submitBtn').on('click', submitBtnClick ); 
