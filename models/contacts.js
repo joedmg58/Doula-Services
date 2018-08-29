@@ -39,6 +39,12 @@ module.exports = function(sequelize, DataTypes) {
     clientMessage:{
       type: DataTypes.TEXT,
       validate: { len: [0,300] }
+    },
+    clientContactOption: {
+      type: DataTypes.ENUM('','','')
+    },
+    clientHasAppointment: {
+      type: DataTypes.BOOLEAN
     }
   });
   

@@ -17,10 +17,9 @@ module.exports = function(app) {
 
     //Insert data on the database ( model Contacts )
     db.Contacts.create( req.body ).then( function( dbContacts ) {
-      
-      console.log( 'SQL Code executed: \n %s' + dbContacts.sql );
-
+      res.json( dbContacts );
     });
+
 
   });
 
