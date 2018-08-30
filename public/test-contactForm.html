@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doula Services (test contact form)</title>
+    <link rel="stylesheet" href="./styles/test-contactForm.css">
+</head>
+<body>
+    <div>
+        <h2>Contact form :</h2>
+    </div>
+
+    <div id="form-container">
+        <form action="/api/contacts" method="POST" id="contactForm">
+            <fieldset>
+                <legend>Contact info: </legend>
+
+                <label for="firstName">First Name:</label> <br>
+                <input type="text" name="clientName" 
+                       id="firstName" 
+                       placeholder="First name" 
+                       pattern="[A-Za-z\s]+"
+                       minlength="1" maxlength="20"
+                       required> 
+                <span></span> <br><br>
+
+                <label for="lastName">Last Name:</label> <br>
+                <input type="text" name="clientLastName" 
+                       id="lastName" 
+                       placeholder="Last name"
+                       pattern = "[A-Za-z\s]+"
+                       minlength="1" maxlength="30"
+                       required>
+                <span></span> <br><br>
+
+                <label for="phoneNumber">Phone Number:</label> <br>
+                <input type="text" name="clientPhoneNumber" 
+                       id="phoneNumber" 
+                       placeholder="(123)-456-7890"
+                       pattern = "[0-9]+"
+                       maxlength="10"
+                       required> 
+                <span></span> <br><br>
+
+                <label for="email">e-mail:</label> <br>
+                <input type="text" name="clientEmail" id="email" placeholder="myemail@somedomain.com" width="80rm"> <br><br>
+
+                <label for="dueDate">Due Date</label> <br>
+                <input type="text" name="clientDueDate" id="dueDate" placeholder="xx/xx/xxxx"> <br><br>
+
+                <label for="message">Message:</label> <br>
+                <textarea name="clientMessage" rows="4" cols="80" id="message" placeholder="Write some message here..."></textarea> <br> 
+
+                <p id="errorMsg" class="warning"></p>
+
+                <input type="submit" title="Input type submit, executes the default submit event of the form." value="Submit"> <br>
+                <button type="button" id="submitBtn"  title="Button that will trigger the on click event to send ajax post request">Submit button</button> <br><br>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Own script -->
+    <script src="./js/contact.js"></script>
+</body>
+</html>

@@ -5,7 +5,8 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       validate: { 
-        is: ["^[a-z]+$",'i'],
+        //is: ["^[a-z]+$",'i'],
+        notEmpty: true,
         len: [1,20]
       }
     },
@@ -13,7 +14,8 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       validate:  { 
-        is: ["^[a-z]+$",'i'],
+        //is: ["^[a-z]+$",'i'],  only allow letters ( no space allowed)
+        notEmpty: true,
         len: [1,30]
       }
     },  
@@ -36,7 +38,13 @@ module.exports = function(sequelize, DataTypes) {
     },
     clientMessage:{
       type: DataTypes.TEXT,
-      validate: { len: [300] }
+      validate: { len: [0,300] }
+    },
+    clientContactOption: {
+      type: DataTypes.ENUM('Phone','SMS','e-mail')
+    },
+    clientHasAppointment: {
+      type: DataTypes.BOOLEAN
     }
   });
   
