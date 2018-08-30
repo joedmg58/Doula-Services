@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "joedmg58",
+    "password": "",
     "database": "mydoulaclients_db",
     "host": "localhost",
     "dialect": "mysql"

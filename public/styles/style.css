@@ -98,7 +98,6 @@
 
 .thumbnail-readings{
     background:white;
-    /* border:#d2b7b7 double 5px; */
     margin:10px 0px 10px 0px;
     text-align: center;
 }
@@ -124,4 +123,15 @@ small{
     font-family: 'amaticSc', Arial, Helvetica, sans-serif;
    
 }
+
+/* Contact Page */
+
+#contactForm-container{
+    background: url(../images/Pivoine\ Background.jpg); 
+}
+
+#submitForm{
+    color: #d2b7b7;
+}
+
 

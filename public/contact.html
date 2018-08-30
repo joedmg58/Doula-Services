@@ -10,7 +10,7 @@
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
 
@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="" id="navBarLogo">
+            <img src="/images/BeautifulBirthsLogo.png" id="navBarLogo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
             </ul>
         </div>
     </nav>
-    <div class="container" id="homepage-container">
+    <div class="container" id="contactForm-container">
         <div class="row " id="row-container-top">
 
 
@@ -68,98 +68,98 @@
                 </p>
                 <div class="container" id="jumbotron-contact">
                     <div class="row">
-                        <div class="col-6 col-md-4">
+                        <div class="col-6 col-md-6">
                             <div class="form-group">
                                 <label for="firstName">First Name</label>
-                                <input type="text" class="form-control" id="firstName"  placeholder="Ex:Jane">
+                                <input type="text" class="form-control form-control-sm" id="firstName" placeholder="Ex: Jane">
                             </div>
                         </div>
-                        <div class="col-6 col-md-4">my middle col</div>
-                        <div class="col-6 col-md-4">
+                        <!-- <div class="col-sm-2 col-xs-2">col</div> -->
+                        <div class="col-6 col-md-6">
                             <div class="form-group">
                                 <label for="lastName">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Ex:Smith">                           
+                                <input type="text" class="form-control form-control-sm" id="lastName" placeholder="Ex: Smith">
                             </div>
                         </div>
                     </div>
-               
-                <div class="row">
-                    <div class="col-6 col-md-4">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Phone number</label>
-                            <input type="tel" class="form-control" id="phoneNum" placeholder="Ex: 954-123-4567">
+
+                    <div class="row">
+                            <div class="col-6 col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Phone number</label>
+                                <input type="tel" class="form-control form-control-sm" id="phoneNum" placeholder="Ex: 954-123-4567">
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-2 col-xs-2">col</div> -->
+                        <div class="col-6 col-md-6">
+                            <div class="form-group">Email address</label>
+                                <input type="email" class="form-control form-control-sm" id="emailAddress" placeholder="Ex: email@noemail.com.">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4">my middle col</div>
-                    <div class="col-6 col-md-4">
-                        <div class="form-group">Email address</label>
-                            <input type="email" class="form-control" id="emailAddress" placeholder="Ex:email@noemail.com." >
+                    <div class="row">
+                            <div class="col-6 col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">How many weeks are you?</label>
+                                <input type="number" class="form-control form-control-sm" id="weeks" placeholder="Ex: 34">
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-2 col-xs-2">col</div> -->
+                        <div class="col-6 col-md-6">
+                            <div class="form-group">
+                                <label for="dueDate">What is your estimated due date?</label>
+                                <input type="date" class="form-control form-control-sm" id="EDD" placeholder="">
+                            </div>
                         </div>
                     </div>
+                    <div class="row">
+                            <div class="col-6 col-md-6">
+                            <div class="form-group">
+                                <label for="Textarea">Anything you would like to add...</label>
+                                <textarea class="form-control form-control-sm" id="Textarea" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-2 col-xs-2"> col</div> -->
+                        <div class="col-6 col-md-6">
+                            <fieldset class="form-group">
+                                <legend>How would you like to be contacted?</legend>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="emailContact" value="option1" checked="">                                        By
+                                        email.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="phoneContact" value="option2">                                        By
+                                        phone.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="textMessContact" value="option3">                                        By
+                                        text-message.
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <p class="lead">
+                        <button type="button" class="btn btn-outline-secondary" id="submitForm">Submit</button>
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="col-6 col-md-4">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">How many weeks are you?</label>
-                            <input type="number" class="form-control" id="weeks"  placeholder="Ex: 34" >
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4">my middle col</div>
-                    <div class="col-6 col-md-4">
-                        <div class="form-group">
-                            <label for="dueDate">What is your estimated due date?</label>
-                            <input type="date" id="EDD" placeholder="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 col-md-4">
-                        <div class="form-group">
-                            <label for="Textarea">Anything you would like to add...</label>
-                            <textarea class="form-control" id="Textarea" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4">my middle col</div>
-                    <div class="col-6 col-md-4">
-                        <fieldset class="form-group">
-                            <legend>How would you like to be contacted?</legend>
-                            <div class="form-check">
-                              <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="emailContact" value="option1" checked="">
-                                By email.
-                              </label>
-                            </div>
-                            <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="phoneContact" value="option2">
-                                By phone.
-                              </label>
-                            </div>
-                            <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="textMessContact" value="option3">
-                                By text-message.
-                              </label>
-                            </div>
-                          </fieldset>
-                    </div>
-                </div>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
-                </p>
+
+
+
+
             </div>
-            
-            
-
-
         </div>
-    </div>
 
 
     </div>
 
 
-    
+
     </div>
 
     </div>
