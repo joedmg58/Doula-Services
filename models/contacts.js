@@ -41,7 +41,7 @@ module.exports = function(sequelize, DataTypes) {
       validate: { len: [0,300] }
     },
     clientContactOption: {
-      type: DataTypes.ENUM('','','')
+      type: DataTypes.ENUM('Phone','SMS','e-mail')
     },
     clientHasAppointment: {
       type: DataTypes.BOOLEAN

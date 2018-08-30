@@ -4,9 +4,12 @@ module.exports = function(app) {
 
   // Get all contacts
   app.get("/api/contacts", function(req, res) {
+
+    //retreive data from model Contacts
     db.Contacts.findAll({}).then( function( dbContacts ) {
       res.json( dbContacts );
     });
+    
   });
 
   // Create a new contact
