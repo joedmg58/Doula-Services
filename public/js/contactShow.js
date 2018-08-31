@@ -14,7 +14,7 @@ function addData2Table( data ) {
 
         var col6 = $('<td>').text( data[i].clientContactOption );
         var col7 = $('<td>').text( data[i].clientHasAppointment );
-        var col8 = $('<td>').html( '<button>View message</button>' );
+        var col8 = $('<td>').html( '<button type="button" class="btn btn-secondary">View Message</button>' );
 
         row.append( col1 );
         row.append( col2 );

@@ -134,4 +134,22 @@ small{
     color: #d2b7b7;
 }
 
+/* DB Admin Access */
+
+#dbAdmin-container{
+    margin: auto;
+    margin-top:60px; 
+}
+
+thead{
+    background: #d2b7b7;
+}
+
+.btn{
+    background: lightgray;
+    color:#d2b7b7;
+}
+
+
+
 
