@@ -86,21 +86,22 @@
                     <div class="row">
                             <div class="col-6 col-md-6">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Phone number</label>
-                                <input type="tel" class="form-control form-control-sm" id="phoneNum" placeholder="Ex: 954-123-4567">
+                                <label for="phoneNumber">Phone number</label>
+                                <input type="tel" class="form-control form-control-sm" id="phoneNumber" placeholder="Ex: 954-123-4567">
                             </div>
                         </div>
                         <!-- <div class="col-sm-2 col-xs-2">col</div> -->
                         <div class="col-6 col-md-6">
-                            <div class="form-group">Email address</label>
-                                <input type="email" class="form-control form-control-sm" id="emailAddress" placeholder="Ex: email@noemail.com.">
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control form-control-sm" id="email" placeholder="Ex: email@noemail.com.">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                             <div class="col-6 col-md-6">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">How many weeks are you?</label>
+                                <label for="weeks">How many weeks are you?</label>
                                 <input type="number" class="form-control form-control-sm" id="weeks" placeholder="Ex: 34">
                             </div>
                         </div>
@@ -108,15 +109,15 @@
                         <div class="col-6 col-md-6">
                             <div class="form-group">
                                 <label for="dueDate">What is your estimated due date?</label>
-                                <input type="date" class="form-control form-control-sm" id="EDD" placeholder="">
+                                <input type="date" class="form-control form-control-sm" id="dueDate" placeholder="">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                             <div class="col-6 col-md-6">
                             <div class="form-group">
-                                <label for="Textarea">Anything you would like to add...</label>
-                                <textarea class="form-control form-control-sm" id="Textarea" rows="3"></textarea>
+                                <label for="message">Anything you would like to add...</label>
+                                <textarea class="form-control form-control-sm" id="message" rows="3"></textarea>
                             </div>
                         </div>
                         <!-- <div class="col-sm-2 col-xs-2"> col</div> -->
@@ -125,19 +126,19 @@
                                 <legend>How would you like to be contacted?</legend>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="optionsRadios" id="emailContact" value="option1" checked="">                                        By
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="emailContact" value="e-mail" checked="">                                        By
                                         email.
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="optionsRadios" id="phoneContact" value="option2">                                        By
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="phoneContact" value="Phone">                                        By
                                         phone.
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="optionsRadios" id="textMessContact" value="option3">                                        By
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="textMessContact" value="SMS">                                        By
                                         text-message.
                                     </label>
                                 </div>
@@ -145,7 +146,7 @@
                         </div>
                     </div>
                     <p class="lead">
-                        <button type="button" class="btn btn-outline-secondary" id="submitForm">Submit</button>
+                        <button type="button" class="btn btn-outline-secondary" id="submitBtn">Submit</button>
                     </p>
                 </div>
 
@@ -165,7 +166,10 @@
     </div>
     </div>
 
-
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Own script -->
+    <script src="./js/contact.js"></script>
 
 </body>
 
