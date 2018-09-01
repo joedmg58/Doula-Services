@@ -1,3 +1,7 @@
+submitBtnClick = '#sumbitbtn';
+closeBtn = '#closeBtn';
+scheduleBtn = '#scheduleBtn'; 
+
 function submitBtnClick( event ){
     
     event.preventDefault();
@@ -26,12 +30,29 @@ function submitBtnClick( event ){
         console.log( 'AJAX data response = %s', response.data );
         location.reload(); //reloads the current page
     } );
-}
 
+    form.submitBtn.addEventListener('click') = {
+        const request = new XMLHttpRequest();
+
+        request.onload = (){
+
+
+        };
+
+        request.open('post', 'server.js');
+        request.setRequestHeader('Content-type', 'applicaton/x-www-form-urlencoded');
+        r
+
+    }
+}
 
 $(document).ready( function(){
 
     //register listener por submit button click
     $('#submitBtn').on('click', submitBtnClick ); 
 
+
 });
+
+
+location.href = "public/index.html"
