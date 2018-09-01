@@ -178,9 +178,15 @@ thead{
     letter-spacing: 5px;
     line-height: 10px;
 }
-p{
+.myInfo{
     font-family: 'quicksand',Arial, Helvetica, sans-serif;
     font-size: 10px;
+    line-height:15px;
+}
+
+#socialMedia{
+    margin:auto;
+   
 }
 
 #copyright{
@@ -189,4 +195,9 @@ p{
     color:white;
     margin-bottom: 0px;
     padding-bottom: 5px;
+    letter-spacing: 15px,
 }
+
+
+
+
