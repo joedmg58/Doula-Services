@@ -5,14 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Beautiful Births</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootswatch CSS -->
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/minty/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="/js/main.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css" />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" 
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous"> -->
+    
+    <!-- Our style -->    
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css" /> 
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" 
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
         crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" 
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" 
+        crossorigin="anonymous"></script>
+
+    <!-- Our Script -->
+    <script src="/js/main.js"></script>        
 
 </header>
 
@@ -73,26 +89,30 @@
     <!-- MODAL -->
     <div class="modal" data-modal="toggle" id="messageModal">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
+              <div class="modal-content" >
+
+                <div class="modal-header"> <!-- style="background-color: rgb(210, 183, 183)" -->
+                  <h5 class="modal-title">Message from: <span id="cli-name"></span></h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+
+                <div class="modal-body" style="background-color: rgb(252,226,227)">
+                  <p id="cli-msg"></p>
                 </div>
+
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Save changes</button>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
+
               </div>
             </div>
-          </div>
+    </div>
 
-    <!-- JQuery -->
+    <!-- JQuery 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    -->
     <!-- Own script -->
     <script src="./js/contactShow.js"></script>
 </body>
