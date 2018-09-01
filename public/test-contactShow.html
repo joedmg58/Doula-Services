@@ -1,33 +1,100 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Doula Services (test contact show)</title>
-    <link rel="stylesheet" href="./styles/test-contactShow.css">
-</head>
-<body>
-    <div class="container">
-        <h2>Client contacts listing</h2>
+<!doctype html>
+<html>
+<header>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Beautiful Births</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/minty/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
 
-        <table id="clientTable">
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Phone Number</th>
-                <th>e-mail</th>
-                <th>Due Date</th>
-                <th>Contact preference</th>
-                <th>Has Appointment</th>
-                <th>Message</th>
-            </tr>
+</header>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/images/BeautifulBirthsLogo.png" id="navBarLogo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="home-link" href="/">Home
+                        <!-- <span class="sr-only">(current)</span> -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#AboutMe">
+                        <span id="about-me-link">About Me</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="services-link" href="#Services">Services</a>
+                </li>
+                <!-- <li class="nav-item">
+                            <a class="nav-link" id="readings-link" href="readings.html">Readings</a>
+                        </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="dbAdmin-container">
+        <h2 class="display-4">Clients Contact Information</h2>
+
+        <table class="table table-secondary"  id="clientTable">
+                <thead>
+                  <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Due Date</th>
+                    <th scope="col">Number of Weeks</th>
+                    <th scope="col">Has Appointment</th>
+                    <th scope="col">Contact Preference</th>
+                    <th scope="col"><button type="button" class="btn btn-secondary" id="modal">View Message</button></th>
+                  </tr>
+                </thead>
+                
             <!-- live data will be added here as new table rows and colummns -->
         </table>
     </div>
+    <!-- MODAL -->
+    <div class="modal" data-modal="toggle" id="messageModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Own script -->
     <script src="./js/contactShow.js"></script>
 </body>
+
 </html>
