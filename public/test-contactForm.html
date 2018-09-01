@@ -4,11 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Doula Services (test contact form)</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/minty/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-Qt9Hug5NfnQDGMoaQYXN1+PiQvda7poO7/5k4qAmMN6evu0oDFMJTyjqaoTGHdqf" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/test-contactForm.css">
 </head>
 <body>
     <div>
-        <h2>Contact form :</h2>
+        <h2>Contact form :</h2> <button type="button" id="showModal">Press to show modal dialog</button>
     </div>
 
     <div id="form-container">
@@ -59,6 +61,30 @@
             </fieldset>
         </form>
     </div>
+
+    <!-- Modal -->
+
+    <div class="modal" id="myModal">
+            <div class="modal-dialog" role="document" id="myModal2">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+    </div>
+
+    <!-- End of modal -->      
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

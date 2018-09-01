@@ -31,10 +31,18 @@ function submitBtnClick( event ){
     } );
 }
 
+function showModal( event ) {
+    var modalDlg = $('#myModal');
+
+    modalDlg.toggle('true');
+    
+}
 
 $(document).ready( function(){
 
     //register listener por submit button click
     $('#submitBtn').on('click', submitBtnClick ); 
+
+    $('#showModal').on('click', showModal );
 
 });
