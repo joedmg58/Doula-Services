@@ -37,6 +37,14 @@ $(document).ready( function(){
     }).then( function( response ){
         console.log( 'AJAX data response = %s', response );
         addData2Table( response );
-    } );
+     });
+     $('#modal').on('click', function(){
+         console.log("calling modal");
+        $('#messageModal').modal('toggle');
+        
+     })
+
+
 
 });
+
