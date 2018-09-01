@@ -45,6 +45,9 @@ module.exports = function(sequelize, DataTypes) {
     },
     clientHasAppointment: {
       type: DataTypes.BOOLEAN
+    },
+    clientWeeks: {
+      type: DataTypes.INTEGER
     }
   });
   

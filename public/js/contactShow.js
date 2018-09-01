@@ -12,9 +12,10 @@ function addData2Table( data ) {
         var d = new Date( data[i].clientDueDate );
         var col5 = $('<td>').text( d.toLocaleDateString() );
 
-        var col6 = $('<td>').text( data[i].clientContactOption );
+        var col6 = $('<td>').text( data[i].clientWeeks );
         var col7 = $('<td>').text( data[i].clientHasAppointment );
-        var col8 = $('<td>').html( '<button type="button" class="btn btn-secondary">View Message</button>' );
+        var col8 = $('<td>').text( data[i].clientContactOption );
+        var col9 = $('<td>').html( '<button type="button" class="btn btn-secondary shMessage">View Message</button>' );
 
         row.append( col1 );
         row.append( col2 );
@@ -24,9 +25,14 @@ function addData2Table( data ) {
         row.append( col6 );
         row.append( col7 );
         row.append( col8 );
+        row.append( col9 );
 
         table.append( row );
     }
+}
+
+function showMessage( event ) {
+    $('#messageModal').toggle( true );
 }
 
 $(document).ready( function(){
@@ -38,13 +44,9 @@ $(document).ready( function(){
         console.log( 'AJAX data response = %s', response );
         addData2Table( response );
      });
-     $("#submitForm").toggle(true, function(){
-         console.log("calling modal");
-        $('#messageModal').modal('toggle');
-        
-     })
 
-
+     $(".shMessage").on('click', showMessage );
+     
 
 });
 
