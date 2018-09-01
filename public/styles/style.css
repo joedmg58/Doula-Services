@@ -156,14 +156,37 @@ thead{
 
 #main-footer{
     background:#d2b7b7;
+    font-family: 'amaticSc', Arial, Helvetica, sans-serif;
 }
 
 #logofooter{
     padding:25px;
     display: block;
-    height: 300px;
-    margin: 60px auto 30px auto; 
+    height: 150px;
+    margin: 15px auto 15px auto; 
     border:white;
+    border-width: 1px;
     border-style: solid;
     border-radius: 80%;
+}
+
+#footerContactInfo,
+.myInfo{
+    margin:auto;
+    color:white;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 10px;
+}
+p{
+    font-family: 'quicksand',Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#copyright{
+    /* margin: 10px auto 10px auto;  */
+    text-align: center;
+    color:white;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
 }
