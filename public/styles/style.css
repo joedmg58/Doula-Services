@@ -152,4 +152,18 @@ thead{
 
 
 
+/* Footer */
 
+#main-footer{
+    background:#d2b7b7;
+}
+
+#logofooter{
+    padding:25px;
+    display: block;
+    height: 300px;
+    margin: 60px auto 30px auto; 
+    border:white;
+    border-style: solid;
+    border-radius: 80%;
+}
