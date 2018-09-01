@@ -12,6 +12,20 @@ module.exports = function(app) {
     
   });
 
+  //Get a particular contact 
+  app.get("/api/contacts/:id", function(req, res) {
+
+    //retreive data with a particular id
+    db.Contacts.findOne({ 
+      where: {
+        id: req.params.id
+      }
+    }).then( function( dbContacts ) {
+      res.json( dbContacts );
+    });
+
+  });
+
   // Create a new contact
   app.post("/api/contacts", function(req, res) {
 
@@ -26,10 +40,11 @@ module.exports = function(app) {
 
   });
 
-  // Delete a contact by id
+  /* // Delete a contact by id
   app.delete("/api/contacts/:id", function(req, res) {
     db.Contacts.destroy({ where: { id: req.params.id } }).then(function( dbContacts ) {
       res.json( dbContacts );
     });
-  });
+  }); */
+
 }; 
