@@ -193,9 +193,14 @@ thead{
     /* margin: 10px auto 10px auto;  */
     text-align: center;
     color:white;
+    margin-top: 10px;
     margin-bottom: 0px;
     padding-bottom: 5px;
-    letter-spacing: 15px,
+    letter-spacing: 3px;
+}
+
+#AdminBtn{
+   margin-top: 20px;
 }
 
 
