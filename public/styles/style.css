@@ -226,6 +226,10 @@ thead{
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
+.modal-backdrop {
+    z-index: 1;
+}
+
 /* The Close Button */
 /* .close {
     color: blue;
