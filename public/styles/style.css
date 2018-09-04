@@ -152,4 +152,101 @@ thead{
 
 
 
+/* Footer */
+
+#main-footer{
+    background:#d2b7b7;
+    font-family: 'amaticSc', Arial, Helvetica, sans-serif;
+}
+
+#logofooter{
+    padding:25px;
+    display: block;
+    height: 150px;
+    margin: 15px auto 15px auto; 
+    border:white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 80%;
+}
+
+#footerContactInfo,
+.myInfo{
+    margin:auto;
+    color:white;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 10px;
+}
+.myInfo{
+    font-family: 'quicksand',Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height:15px;
+}
+
+#socialMedia{
+    margin:auto;
+   
+}
+
+#copyright{
+    /* margin: 10px auto 10px auto;  */
+    text-align: center;
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+#AdminBtn{
+   margin-top: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index:100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #d2b7b7;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #d2b7b7;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+/* .close {
+    color: blue;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+} */
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-title{
+    text-align: center;
+    
+}
+
+label{
+    font-family: 'quicksand',Arial, Helvetica, sans-serif; 
+}
+
 
