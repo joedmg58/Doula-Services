@@ -69,6 +69,7 @@ function showMessage( event ) {
 $(document).ready( function(){
 
     console.log( 'AJAX GET request to \'/api/contacts\'' );
+    
     $.ajax('/api/contacts', {
         type: 'GET'
     }).then( function( response ){
@@ -77,7 +78,5 @@ $(document).ready( function(){
     });
 
     
-     
-
-});
+}); //end of document.ready
 
