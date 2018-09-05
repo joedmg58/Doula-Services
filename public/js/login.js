@@ -23,7 +23,7 @@ $(document).ready(function() {
   });
 
   // loginAdmin does a post to our "api/login" route and if successful,
-  function loginAdmin(Admin_name, Admin_pwd) {
+  function loginAdmin(adminNameInput, adminPwdInput) {
     $.post("/api/contact", {
       Admin_name: adminNameInput,
       Admin_pwd: adminPwdInput,
