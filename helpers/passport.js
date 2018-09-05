@@ -5,36 +5,36 @@ var db = require("../models");
 
 passport.use( new LocalStrategy(
     {
-        usernameField: "email"
+        Admin_name: "adminName"
     }, 
 
-    function (email, password, done ){
-        db.User.findOne({
+    function (adminName, password, done ){
+        db.Admins.findOne({
             where: {
-                email:email
+                Admin_name: adminName
             }
-        }).then((dbUser)=>{
+        }).then((dbAdmin=>{
             //if there is no user with the given email 
-            if(!dbUser){
+            if(!dbAdmin){
                 return done(null, false),{
                     message: "Incorrect Email"
                 };
             }
-            else if (!dbUser.validPassword(password)){
+            else if (!dbAdmin.validPassword(password)){
                 return done(null, false, {
                     message: "Incorrect Password"
                 })
             }
             return done(null,dbUser);
-        })
+        }))
     }
 ));
 
-passport.serializeUser(function(user,cb){
-    cb(null,user);
+passport.serializeUser(function(admin,cb){
+    cb(null,admin);
 });
 
 passport.deserializeUser(function(user,cb){
-    cb(null,user);
+    cb(null,admin);
 })
 module.exports = passport;

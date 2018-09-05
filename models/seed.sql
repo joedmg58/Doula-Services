@@ -10,9 +10,9 @@ VALUES
 
 2
 3
-CREATE TABLE Admins(
+/* CREATE TABLE Admins(
     Admin_id INT AUTO_INCREMENT,
     PRIMARY KEY (Admin_id),
     Admin_name VARCHAR(30) NOT NULL,
     Admin_pwd TEXT(30) NOT NULL
-)
+) */

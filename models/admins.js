@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes)=>{
             allowNull:false, 
             unique: true, 
             validate:{
-                isEmail: true
+                isEmail: false
             }
         }, 
         Admin_pwd:{
@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes)=>{
     }
 
    Admins.hook("beforeCreate", function(admin){
-        user.password= bcrypt.hashSync(admin.password, bcrypt.genSaltSync(10), null);
+        admin.password= bcrypt.hashSync(admin.password, bcrypt.genSaltSync(10), null);
     })
 
     return Admins;
