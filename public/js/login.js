@@ -4,8 +4,11 @@ $(document).ready(function() {
   var adminNameInput = $("input#adminName");
   var adminPwdInput = $("input#adminPwd");
 
-  // When the form is submitted, we validate there's an email and password entered
+  
+
+  // When the form is submitted, we validate there's a name and password entered
   loginForm.on("submit", function(event) {
+    console.log("There is not admin with this name");
     event.preventDefault();
     var adminData = {
       Admin_name: adminNameInput.val().trim(),
@@ -13,7 +16,9 @@ $(document).ready(function() {
     };
 
     if (!adminData.Admin_name || !adminPwdInput.Admin_pwd) {
+    
       return;
+     
     }
 
     // If we have an email and password we run the loginAdmin function and clear the form
