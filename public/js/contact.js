@@ -15,7 +15,9 @@ function submitBtnClick( event ){
         clientPhoneNumber: htmlPhoneNumber.val().trim(),
         clientEmail: $('#email').val().trim(),
         clientDueDate: $('#dueDate').val().trim(),
-        clientMessage: $('#message').val().trim()
+        clientMessage: $('#message').val().trim(),
+        clientWeeks: $('#weeks').val().trim(),
+        clientDueDate: $('#dueDate').val().trim()
     };
 
     console.log( 'AJAX POST request to \'/api/contacts\'' );
