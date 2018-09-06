@@ -18,7 +18,8 @@ function submitBtnClick( event ){
         clientMessage: $('#message').val().trim(),
         clientWeeks: $('#weeks').val().trim(),
         clientDueDate: $('#dueDate').val().trim(),
-        clientMessage: $('').val().trim()
+        clientMessage: $('#message').val().trim(),
+        clientContactOption: $("input[name='optionsRadios']:checked").val()
     };
 
     console.log( 'AJAX POST request to \'/api/contacts\'' );
@@ -27,7 +28,7 @@ function submitBtnClick( event ){
         data: contactInfo
     }).then( function( response ){
         console.log( 'AJAX data response = %s', response.data );
-        location.reload(); //reloads the current page
+        location.replace('/'); //goes to home
     } );
 }
 

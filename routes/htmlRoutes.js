@@ -18,6 +18,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/contact.html"));
   });
 
+  app.get("/admin", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/test-contactShow.html"));
+  });
+
   // Load example page and pass in an example by id
   app.get("/contacts/:id", function(req, res) {
     db.Contacts.findOne({ where: { id: req.params.id } }).then(function(dbExample) {

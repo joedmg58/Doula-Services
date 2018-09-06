@@ -23,6 +23,10 @@ $(document).ready(function () {
         console.log("Translated menu in French.")
         
     });
+
+
+    $('#loginBtn').on('click', loginClick );
+
 });
 
 // Get the modal
@@ -50,4 +54,8 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+function loginClick( event ) {
+    location.assign('/admin');
 }
