@@ -1,19 +1,20 @@
 $(document).ready(function() {
   // Getting references to our form and inputs
-  var loginForm = $("div.modal-content");
+  var loginForm = $("#submitLogin");
   var adminNameInput = $("input#adminName");
   var adminPwdInput = $("input#adminPwd");
 
   
 
   // When the form is submitted, we validate there's a name and password entered
-  loginForm.on("submit", function(event) {
+  loginForm.on("click", function(event) {
     console.log("There is not admin with this name");
     event.preventDefault();
     var adminData = {
       Admin_name: adminNameInput.val().trim(),
       Admin_pwd: adminPwdInput.val().trim()
     };
+    console.log(adminData);
 
     if (!adminData.Admin_name || !adminPwdInput.Admin_pwd) {
     
