@@ -35,6 +35,8 @@ module.exports = function(app) {
     //Insert data on the database ( model Contacts )
     db.Contacts.create( req.body ).then( function( dbContacts ) {
       res.json( dbContacts );
+    }).catch(function(err){
+      console.log(err);
     });
 
 
