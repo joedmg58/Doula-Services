@@ -28,7 +28,7 @@ function submitBtnClick( event ){
         data: contactInfo
     }).then( function( response ){
         console.log( 'AJAX data response = %s', response.data );
-        location.replace('/'); //goes to home
+        location.replace('calendly.html'); //goes to home
     } );
 }
 
